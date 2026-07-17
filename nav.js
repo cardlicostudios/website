@@ -4,7 +4,10 @@
 
 /* Flip this to true on launch day, then fill in the store URLs below. */
 const LAUNCHED = false;
-
+const supabase = window.supabase.createClient(
+  'https://xawrfuqdafipquveemxe.supabase.co',
+  'sb_publishable_keBoqm-l5w_fz93u1vXBVw_cKIIzZT0' // anon/public key from Supabase dashboard → Settings → API
+);
 const STORE_URLS = {
   googlePlay: '',
   appStore: '',
