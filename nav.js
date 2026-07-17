@@ -98,14 +98,32 @@ function applyLaunchState() {
 }
 
 /* ---------- Email capture (Coming Soon) ---------- */
+/* ---------- Email capture (Coming Soon) ---------- */
 function initEmailForms() {
   document.querySelectorAll('.email-capture').forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const input = form.querySelector('input[type="email"]');
       const success = form.parentElement.querySelector('.form-success');
+      const submitBtn = form.querySelector('button[type="submit"]');
       if (!input || !input.value) return;
-      // No backend wired up yet — swap this for a real endpoint (e.g. Supabase) at launch prep.
+
+      const email = input.value.trim();
+      if (submitBtn) submitBtn.disabled = true;
+
+      const { error } = await supabase
+        .from('mailing_list')
+        .insert({ email });
+
+      if (submitBtn) submitBtn.disabled = false;
+
+      if (error && error.code !== '23505') {
+        // 23505 = duplicate email — treat as success, don't scare the user
+        console.error('Email capture failed:', error);
+        alert("Something went wrong — please try again.");
+        return;
+      }
+
       input.value = '';
       if (success) success.style.display = 'block';
     });
