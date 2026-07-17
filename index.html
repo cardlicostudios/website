@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Cardlico — Sort cards. One wrong swipe. Game over.</title>
+<meta name="description" content="Cardlico is a mobile card-sorting game. 54 cards, 4 directions, zero mercy. One wrong swipe and it's game over. Free to download.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+    <div class="nav-links">
+      <a href="how-to-play.html">How to Play</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="nav-right">
+      <a href="#download-cta" class="nav-cta">Notify Me</a>
+      <button id="nav-hamburger" class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="nav-overlay" class="nav-overlay">
+  <div class="nav-overlay-top">
+    <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+    <button id="nav-overlay-close" class="nav-overlay-close" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-overlay-links">
+    <a href="how-to-play.html">How to Play</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="#download-cta">Download</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-logo">Card<span class="gold">lico</span></div>
+      <p class="hero-tagline">Sort cards. One wrong swipe. Game over.</p>
+      <p class="hero-sub">54 cards. 4 directions. Zero mercy.</p>
+
+      <div class="store-row hero-buttons">
+        <a href="#" data-store="play" class="store-btn">
+          <span class="store-icon">▶</span>
+          <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+        </a>
+        <a href="#" data-store="ios" class="store-btn">
+          <span class="store-icon"><svg viewBox="0 0 384 512" width="22" height="22" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 8 184.8 8 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-65.7-90-65.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></span>
+          <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+      </div>
+
+      <form class="email-capture on-dark" data-email-capture>
+        <input type="email" required placeholder="you@email.com" aria-label="Email address">
+        <button type="submit" class="btn ba">Notify Me</button>
+      </form>
+      <p class="form-success on-dark">You're on the list — we'll email you at launch.</p>
+      <p class="email-note" data-email-capture>Cardlico isn't live yet. Leave your email and we'll ping you the second it launches.</p>
+    </div>
+
+    <div class="phone-stage">
+      <div class="fan-card c1"></div>
+      <div class="fan-card c2"></div>
+      <div class="fan-card c3"></div>
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-hud">
+            <div><div class="hv">4,280</div><div class="hlb">Score</div></div>
+            <div><div class="hv">×6</div><div class="hlb">Combo</div></div>
+          </div>
+          <div class="phone-stagecard">
+            <div class="timer-ring-wrap">
+              <svg viewBox="0 0 100 100" width="100%" style="position:absolute;inset:0;transform:rotate(-90deg)">
+                <circle cx="50" cy="50" r="46" fill="none" stroke="#D8D2C6" stroke-width="4"/>
+                <circle cx="50" cy="50" r="46" fill="none" stroke="#2C5282" stroke-width="4" stroke-dasharray="289" stroke-dashoffset="80" stroke-linecap="round"/>
+              </svg>
+              <div class="pcard-demo">
+                <div class="corner tl"><span class="rank suit-red">Q</span><span class="suit-sm suit-red">♥</span></div>
+                <div class="suit-lg suit-red">♥</div>
+                <div class="corner br"><span class="rank suit-red">Q</span><span class="suit-sm suit-red">♥</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-arena">
+            <span class="arena-hint">♠ Up</span>
+            <span class="arena-hint">♥ Down</span>
+            <span class="arena-hint">♦ Left</span>
+            <span class="arena-hint">♣ Right</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Rule</span>
+      <h2>One glance. One swipe.</h2>
+      <p>Every card belongs to a suit. Every suit belongs to a direction. Read it, swipe it, move on — before the timer beats you to it.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-panel">
+        <div class="suit suit-blk">♠</div>
+        <div class="arrow">↑</div>
+        <div class="dir-label">Spades → Swipe Up</div>
+      </div>
+      <div class="how-panel">
+        <div class="suit suit-red">♥</div>
+        <div class="arrow">↓</div>
+        <div class="dir-label">Hearts → Swipe Down</div>
+      </div>
+      <div class="how-panel">
+        <div class="suit suit-red">♦</div>
+        <div class="arrow">←</div>
+        <div class="dir-label">Diamonds → Swipe Left</div>
+      </div>
+      <div class="how-panel">
+        <div class="suit suit-blk">♣</div>
+        <div class="arrow">→</div>
+        <div class="dir-label">Clubs → Swipe Right</div>
+      </div>
+    </div>
+    <p class="rule-note">Wrong direction = Game Over. Instantly.</p>
+  </div>
+</section>
+
+<!-- SPECIAL CARDS -->
+<section class="section-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Chaos Cards</span>
+      <h2>Seven ways the deck turns on you</h2>
+      <p>Past the basics, special cards start showing up — each one bends a rule you thought you understood.</p>
+    </div>
+
+    <div class="special-grid">
+      <div class="special-item">
+        <div class="spc gold">
+          <div class="corner tl"><span class="rank">A</span><span class="suit-sm">★</span></div>
+          <div class="suit-lg">★</div>
+          <div class="corner br"><span class="rank">A</span><span class="suit-sm">★</span></div>
+        </div>
+        <div class="special-name">Gold</div>
+        <div class="special-desc">×50 score bonus. Free points if you don't fumble it.</div>
+      </div>
+
+      <div class="special-item">
+        <div class="spc frozen">
+          <div class="corner tl"><span class="rank suit-blk">7</span><span class="suit-sm suit-blk">♠</span></div>
+          <div class="suit-lg suit-blk">♠</div>
+          <div class="corner br"><span class="rank suit-blk">7</span><span class="suit-sm suit-blk">♠</span></div>
+        </div>
+        <div class="special-name">Frozen</div>
+        <div class="special-desc">Needs two correct swipes inside one second.</div>
+      </div>
+
+      <div class="special-item">
+        <div class="spc bomb">
+          <div class="corner tl"><span class="rank suit-red">9</span><span class="suit-sm suit-red">♦</span></div>
+          <div class="suit-lg suit-red">♦</div>
+          <div class="corner br"><span class="rank suit-red">9</span><span class="suit-sm suit-red">♦</span></div>
+        </div>
+        <div class="special-name">Bomb</div>
+        <div class="special-desc">0.8 second fuse. Swipe before it goes off.</div>
+      </div>
+
+      <div class="special-item">
+        <div class="spc rainbow">
+          <div class="corner tl"><span class="rank suit-blk">J</span><span class="suit-sm suit-blk">♣</span></div>
+          <div class="suit-lg suit-blk">?</div>
+          <div class="corner br"><span class="rank suit-blk">J</span><span class="suit-sm suit-blk">♣</span></div>
+        </div>
+        <div class="special-name">Rainbow</div>
+        <div class="special-desc">Suit stays hidden for 0.8 seconds. Wait for it.</div>
+      </div>
+
+      <div class="special-item">
+        <div class="spc ghost">
+          <div class="corner tl"><span class="rank suit-red">K</span><span class="suit-sm suit-red">♥</span></div>
+          <div class="suit-lg suit-red">♥</div>
+          <div class="corner br"><span class="rank suit-red">K</span><span class="suit-sm suit-red">♥</span></div>
+        </div>
+        <div class="special-name">Ghost</div>
+        <div class="special-desc">Faded to 50% opacity. Still readable — concentrate.</div>
+      </div>
+
+      <div class="special-item">
+        <div class="spc time">
+          <div class="corner tl"><span class="rank suit-blk">4</span><span class="suit-sm suit-blk">♠</span></div>
+          <div class="suit-lg suit-blk">♠</div>
+          <div class="corner br"><span class="rank suit-blk">4</span><span class="suit-sm suit-blk">♠</span></div>
+        </div>
+        <div class="special-name">Time</div>
+        <div class="special-desc">+0.5s added to your clock on a correct swipe.</div>
+      </div>
+
+      <div class="special-item">
+        <div class="spc joker">
+          <div class="corner tl"><span class="rank" style="color:var(--gld)">🃏</span></div>
+          <div class="suit-lg" style="font-size:34px">🃏</div>
+          <div class="corner br" style="color:var(--gld)"><span class="rank" style="color:var(--gld)">🃏</span></div>
+        </div>
+        <div class="special-name">Joker</div>
+        <div class="special-desc">Any direction wins. The one card that forgives you.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAME MODES -->
+<section id="modes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Three Ways to Play</span>
+      <h2>Campaign, Endless, or Daily</h2>
+    </div>
+    <div class="mode-grid">
+      <div class="mode-card">
+        <div class="mode-icon">🗺️</div>
+        <h3>Campaign</h3>
+        <p>20 hand-built levels across 5 Acts, each one raising the speed and adding a new twist.</p>
+        <ul>
+          <li>Progressive unlock, level by level</li>
+          <li>New special cards and modifiers introduced gradually</li>
+          <li>Coin rewards on every clear</li>
+        </ul>
+      </div>
+      <div class="mode-card">
+        <div class="mode-icon">♾️</div>
+        <h3>Endless Mode</h3>
+        <p>No finish line. Speed escalates every 10 cards until you break.</p>
+        <ul>
+          <li>Floor speed of 0.6 seconds per card</li>
+          <li>Unlocks once Level 20 is cleared</li>
+          <li>Chase your best run, card by card</li>
+        </ul>
+      </div>
+      <div class="mode-card">
+        <div class="mode-icon">📅</div>
+        <h3>Daily Challenge</h3>
+        <p>One shot, once a day, Hearts only — with a speed bonus for staying sharp.</p>
+        <ul>
+          <li>Same deck for everyone, every day</li>
+          <li>Global leaderboard, resets daily</li>
+          <li>One attempt — make it count</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASTERY -->
+<section class="section-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Endless Milestones</span>
+      <h2>How far can you run?</h2>
+      <p>Every milestone in Endless Mode raises your score multiplier — and hands you a title to match.</p>
+    </div>
+
+    <table class="mastery-table">
+      <thead>
+        <tr><th>Cards Survived</th><th>Multiplier</th><th>Title</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>25 cards</td><td>×1.5</td><td>Quick Hands</td></tr>
+        <tr><td>50 cards</td><td>×2</td><td>Sharp Eye</td></tr>
+        <tr><td>100 cards</td><td>×3</td><td>Card Whisperer</td></tr>
+        <tr><td>200 cards</td><td>×5</td><td>Cardlico Legend</td></tr>
+      </tbody>
+    </table>
+
+    <div class="stat-row">
+      <div><div class="num">54</div><div class="lbl">Cards</div></div>
+      <div><div class="num">20</div><div class="lbl">Levels</div></div>
+      <div><div class="num">7</div><div class="lbl">Special Types</div></div>
+      <div><div class="num">5</div><div class="lbl">Modifiers</div></div>
+      <div><div class="num">1</div><div class="lbl">Daily Challenge</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA -->
+<section id="download-cta" class="cta-band">
+  <div class="wrap">
+    <h2>Ready to lose?</h2>
+    <div class="store-row">
+      <a href="#" data-store="play" class="store-btn">
+        <span class="store-icon">▶</span>
+        <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+      </a>
+      <a href="#" data-store="ios" class="store-btn">
+        <span class="store-icon"><svg viewBox="0 0 384 512" width="22" height="22" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 8 184.8 8 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-65.7-90-65.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></span>
+        <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+        <p>Easy to learn. Difficult to master. Deeply satisfying.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Game</h4>
+          <a href="how-to-play.html">How to Play</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">Made with ♠♥♦♣ in Singapore</div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

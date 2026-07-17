@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>How to Play — Cardlico</title>
+<meta name="description" content="Learn the suits, special cards, modifiers, and scoring system behind Cardlico.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+    <div class="nav-links">
+      <a href="how-to-play.html">How to Play</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="nav-right">
+      <a href="#download-cta" class="nav-cta">Notify Me</a>
+      <button id="nav-hamburger" class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="nav-overlay" class="nav-overlay">
+  <div class="nav-overlay-top">
+    <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+    <button id="nav-overlay-close" class="nav-overlay-close" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-overlay-links">
+    <a href="how-to-play.html">How to Play</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="#download-cta">Download</a>
+  </div>
+</div>
+
+<header class="page-hero">
+  <div class="wrap">
+    <h1>How to Play</h1>
+    <p>Everything you need to know before your first swipe — and everything that'll trip you up after your fiftieth.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap content-block">
+
+    <h2>The Suits</h2>
+    <p>Every card in the 54-card deck belongs to one of four suits. Each suit has exactly one correct swipe direction. There is no partial credit.</p>
+    <div class="how-grid">
+      <div class="how-panel">
+        <div class="suit suit-blk">♠</div>
+        <div class="arrow">↑</div>
+        <div class="dir-label">Spades → Up</div>
+      </div>
+      <div class="how-panel">
+        <div class="suit suit-red">♥</div>
+        <div class="arrow">↓</div>
+        <div class="dir-label">Hearts → Down</div>
+      </div>
+      <div class="how-panel">
+        <div class="suit suit-red">♦</div>
+        <div class="arrow">←</div>
+        <div class="dir-label">Diamonds → Left</div>
+      </div>
+      <div class="how-panel">
+        <div class="suit suit-blk">♣</div>
+        <div class="arrow">→</div>
+        <div class="dir-label">Clubs → Right</div>
+      </div>
+    </div>
+
+    <h2>Special Cards</h2>
+    <p>Once you've got the suits down, the deck starts fighting back. Seven special card types can appear, each changing what a correct swipe actually requires.</p>
+
+    <div class="rule-card">
+      <div class="icon">★</div>
+      <div>
+        <div class="title">Gold — ×50 score bonus</div>
+        <div class="desc">Swiped correctly, a Gold card pays out fifty times the normal points. It's still bound by suit rules — get greedy and swipe wrong, and it costs you the run just like any other card.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">❄️</div>
+      <div>
+        <div class="title">Frozen — two swipes, one second</div>
+        <div class="desc">A Frozen card needs a second correct swipe within one second of the first to actually clear. Miss the follow-up window and it's game over.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">💣</div>
+      <div>
+        <div class="title">Bomb — 0.8 second fuse</div>
+        <div class="desc">The suit is normal, but the clock isn't. A Bomb card forces a correct swipe inside 0.8 seconds regardless of your current game speed.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">🌈</div>
+      <div>
+        <div class="title">Rainbow — suit hidden</div>
+        <div class="desc">The suit shows as a question mark for 0.8 seconds before revealing itself. Swiping blind is a guess — wait for the reveal, then commit.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">👻</div>
+      <div>
+        <div class="title">Ghost — 50% transparent</div>
+        <div class="desc">The card fades to half opacity. The suit is still technically readable, but at speed it's a genuine squint.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">⏱️</div>
+      <div>
+        <div class="title">Time — +0.5s on correct swipe</div>
+        <div class="desc">A small mercy. Clear a Time card correctly and your countdown gets half a second added back.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">🃏</div>
+      <div>
+        <div class="title">Joker — any direction wins</div>
+        <div class="desc">The one card with no wrong answer. Swipe any direction and it counts as correct.</div>
+      </div>
+    </div>
+
+    <h2>Modifiers</h2>
+    <p>Modifiers change the rules of an entire level rather than a single card — they stack with special cards and get more aggressive as Acts progress.</p>
+    <div class="rule-card">
+      <div class="icon">🌀</div>
+      <div>
+        <div class="title">Rotate</div>
+        <div class="desc">Cards oscillate back and forth on screen. Read the suit through the motion — it doesn't stop for you.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">🎨</div>
+      <div>
+        <div class="title">Colour Shift</div>
+        <div class="desc">Suit colours no longer follow the standard black-and-red split, so colour becomes a decoy instead of a shortcut.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">🔀</div>
+      <div>
+        <div class="title">Shuffle Directions</div>
+        <div class="desc">The suit-to-direction mapping rotates partway through the level. What was Up a moment ago might not be Up now.</div>
+      </div>
+    </div>
+
+    <h2>Campaign Acts</h2>
+    <p>20 levels are organised into 5 Acts of increasing difficulty. Each Act introduces something the last one didn't.</p>
+    <table class="acts-table">
+      <thead>
+        <tr><th>Act</th><th>Levels</th><th>Focus</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Act I — Foundation</td><td>1–4</td><td>Learn the suits, build muscle memory</td></tr>
+        <tr><td>Act II — Momentum</td><td>5–8</td><td>Speed ramps up, first special cards appear</td></tr>
+        <tr><td>Act III — Distortion</td><td>9–12</td><td>Rainbow and Ghost cards test focus under pressure</td></tr>
+        <tr><td>Act IV — Pressure</td><td>13–16</td><td>Bomb and Frozen cards demand split-second reads</td></tr>
+        <tr><td>Act V — Mastery</td><td>17–20</td><td>Full modifier stack, Endless Mode unlocks at Level 20</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Scoring</h2>
+    <p>Every correct swipe pays a base amount that scales with your current combo, plus any milestone multiplier active in Endless Mode.</p>
+    <div class="rule-card">
+      <div class="icon">🔢</div>
+      <div>
+        <div class="title">Base points</div>
+        <div class="desc">Each correct swipe earns a flat base score, before any multipliers are applied.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">⚡</div>
+      <div>
+        <div class="title">Combo ×1 – ×10</div>
+        <div class="desc">Every 5 correct swipes in a row raises your combo by one step, up to ×10. A single wrong swipe ends the run — the combo doesn't get a chance to drop first.</div>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="icon">🏆</div>
+      <div>
+        <div class="title">Milestone multipliers</div>
+        <div class="desc">In Endless Mode, crossing a card-count milestone (25 / 50 / 100 / 200) permanently raises your score multiplier for the rest of that run.</div>
+      </div>
+    </div>
+
+    <h2>Five Tips</h2>
+    <div class="tip-list">
+      <div class="tip-item"><span class="tip-num">01</span><p>Read the corner, not just the centre — your eye lands there first once you're fast.</p></div>
+      <div class="tip-item"><span class="tip-num">02</span><p>On Rainbow cards, don't guess. Losing 0.8 seconds beats losing the run.</p></div>
+      <div class="tip-item"><span class="tip-num">03</span><p>Chase combo breakpoints in fives — every fifth correct swipe is a multiplier step.</p></div>
+      <div class="tip-item"><span class="tip-num">04</span><p>In Endless Mode, the floor speed is 0.6s. Practice at that pace in Campaign first.</p></div>
+      <div class="tip-item"><span class="tip-num">05</span><p>Daily Challenge is Hearts only — it rewards raw reaction speed over suit-reading.</p></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="download-cta" class="cta-band">
+  <div class="wrap">
+    <h2>Ready to lose?</h2>
+    <div class="store-row">
+      <a href="#" data-store="play" class="store-btn">
+        <span class="store-icon">▶</span>
+        <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+      </a>
+      <a href="#" data-store="ios" class="store-btn">
+        <span class="store-icon"><svg viewBox="0 0 384 512" width="22" height="22" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 8 184.8 8 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-65.7-90-65.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></span>
+        <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+        <p>Easy to learn. Difficult to master. Deeply satisfying.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Game</h4>
+          <a href="how-to-play.html">How to Play</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">Made with ♠♥♦♣ in Singapore</div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
