@@ -94,10 +94,11 @@ function applyLaunchState() {
   });
 
   // Nav CTA pill: scrolls to download section pre-launch, otherwise points to stores
-  document.querySelectorAll('.nav-cta').forEach(cta => {
-    cta.textContent = LAUNCHED ? 'Download' : 'Notify Me';
-    cta.href = LAUNCHED ? '#download-cta' : '#download-cta';
-  });
+document.querySelectorAll('.nav-cta').forEach(cta => {
+  cta.textContent = LAUNCHED ? 'Download' : 'Notify Me';
+  const hasFormOnThisPage = document.getElementById('download-cta');
+  cta.href = hasFormOnThisPage ? '#download-cta' : 'index.html#download-cta';
+});
 }
 
 /* ---------- Email capture (Coming Soon) ---------- */
