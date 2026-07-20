@@ -4,7 +4,7 @@
 
 /* Flip this to true on launch day, then fill in the store URLs below. */
 const LAUNCHED = false;
-const supabase = window.supabase.createClient(
+const supabaseClient = window.supabase.createClient(
   'https://xawrfuqdafipquveemxe.supabase.co',
   'sb_publishable_keBoqm-l5w_fz93u1vXBVw_cKIIzZT0' // anon/public key from Supabase dashboard → Settings → API
 );
@@ -101,7 +101,6 @@ function applyLaunchState() {
 }
 
 /* ---------- Email capture (Coming Soon) ---------- */
-/* ---------- Email capture (Coming Soon) ---------- */
 function initEmailForms() {
   document.querySelectorAll('.email-capture').forEach(form => {
     form.addEventListener('submit', async (e) => {
@@ -114,7 +113,7 @@ function initEmailForms() {
       const email = input.value.trim();
       if (submitBtn) submitBtn.disabled = true;
 
-      const { error } = await supabase
+      const { error } = await supabaseClient
         .from('mailing_list')
         .insert({ email });
 
