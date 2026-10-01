@@ -76,17 +76,11 @@ rather than hardcoded links.
 
 ## Design system
 
-All design tokens (colours, radii, shadows) live as CSS custom properties at
-the top of `styles.css`, matching the Cardlico app's own design language:
-
-- `--pri` / `--prd` — navy primary, used for dark sections and hero gradient
-- `--acc` / `--acd` — warm gold accent
-- `--bg` / `--bg2` — parchment backgrounds
-- `--dan` / `--suc` — red / green semantic colours
-- `--gld` / `--glt` — gold card colours
-
-Font stack is system-native (`'Segoe UI', system-ui, -apple-system,
-sans-serif`) — no external font loading.
+The website follows the current game shell: turquoise backgrounds, ivory
+reading surfaces, indigo structure, rose actions and rounded system headings.
+Shared tokens and responsive styles live in `styles.css`. The temporary
+three-card mark uses HTML/CSS, with no external fonts or new artwork.
+See [the visual design record](docs/visual-design.md) for sources and scope.
 
 ## Notes
 

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Cardlico — Sort cards. One wrong swipe. Game over.</title>
 <meta name="description" content="Cardlico is a mobile card-sorting game. 54 cards, 4 directions, zero mercy. One wrong swipe and it's game over. Free to download.">
+<meta name="theme-color" content="#52d5cb">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
 <script src="nav.js"></script>
 <nav id="site-nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+    <a href="index.html" class="nav-logo"><span class="brand-mark-cards" aria-hidden="true"><span></span><span></span><span></span></span> Cardlico</a>
     <div class="nav-links">
       <a href="how-to-play.html">How to Play</a>
       <a href="leaderboard.html">Leaderboard</a>
@@ -29,7 +30,7 @@
 
 <div id="nav-overlay" class="nav-overlay">
   <div class="nav-overlay-top">
-    <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+    <a href="index.html" class="nav-logo"><span class="brand-mark-cards" aria-hidden="true"><span></span><span></span><span></span></span> Cardlico</a>
     <button id="nav-overlay-close" class="nav-overlay-close" aria-label="Close menu">✕</button>
   </div>
   <div class="nav-overlay-links">
@@ -44,7 +45,7 @@
 <header class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <div class="hero-logo">Card<span class="gold">lico</span></div>
+      <div class="hero-brand"><span class="brand-mark-cards" aria-hidden="true"><span></span><span></span><span></span></span> Cardlico</div><h1 class="hero-logo">One glance.<br>One swipe.</h1>
       <p class="hero-tagline">Sort cards. One wrong swipe. Game over.</p>
       <p class="hero-sub">54 cards. 4 directions. Zero mercy.</p>
 
@@ -68,10 +69,7 @@
       <p class="email-note" data-email-capture>Cardlico isn't live yet. Leave your email and we'll ping you the second it launches.</p>
     </div>
 
-    <div class="phone-stage">
-      <div class="fan-card c1"></div>
-      <div class="fan-card c2"></div>
-      <div class="fan-card c3"></div>
+    <div class="phone-stage" role="img" aria-label="Illustrated Cardlico gameplay: score and combo above a countdown rail, a heart card, and four swipe directions">
       <div class="phone">
         <div class="phone-notch"></div>
         <div class="phone-screen">
@@ -79,12 +77,9 @@
             <div><div class="hv">4,280</div><div class="hlb">Score</div></div>
             <div><div class="hv">×6</div><div class="hlb">Combo</div></div>
           </div>
-          <div class="phone-stagecard">
+          <div class="phone-countdown" aria-hidden="true"><span></span></div><div class="phone-stagecard">
             <div class="timer-ring-wrap">
-              <svg viewBox="0 0 100 100" width="100%" style="position:absolute;inset:0;transform:rotate(-90deg)">
-                <circle cx="50" cy="50" r="46" fill="none" stroke="#D8D2C6" stroke-width="4"/>
-                <circle cx="50" cy="50" r="46" fill="none" stroke="#2C5282" stroke-width="4" stroke-dasharray="289" stroke-dashoffset="80" stroke-linecap="round"/>
-              </svg>
+
               <div class="pcard-demo">
                 <div class="corner tl"><span class="rank suit-red">Q</span><span class="suit-sm suit-red">♥</span></div>
                 <div class="suit-lg suit-red">♥</div>
@@ -315,7 +310,7 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><span class="spade">♠</span> Cardlico</a>
+        <a href="index.html" class="nav-logo"><span class="brand-mark-cards" aria-hidden="true"><span></span><span></span><span></span></span> Cardlico</a>
         <p>Easy to learn. Difficult to master. Deeply satisfying.</p>
       </div>
       <div class="footer-links">
