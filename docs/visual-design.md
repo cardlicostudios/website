@@ -40,3 +40,12 @@ Marcus's exact decision after reviewing the local update: "approve and deploy to
 This authorizes committing the reviewed source and records, pushing to the website
 repository, and checking the existing GitHub-to-Vercel deployment. The earlier
 local-only approval remains recorded above as the original decision.
+
+## Public content decision — 2026-10-01
+
+Option 1: publish support@cardlico.com and retain only the basic swipe rules,
+leaving special-card mechanics and bonuses for discovery in the game.
+Option 2: use hello@cardlico.com with the same minimal rules.
+Marcus chose: "use support email. yeah just the main rules on the website, the rest should be learnt from playing the game".
+Public gameplay copy must explain the four suit directions and swiping before
+time runs out, without special-card details, scoring formulas or progression spoilers.
