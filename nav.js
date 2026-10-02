@@ -1,12 +1,12 @@
 /* ============================================================
-   CARDLICO — Shared site behaviour
+   CARDLICO | Shared site behaviour
    ============================================================ */
 
 /* Flip this to true on launch day, then fill in the store URLs below. */
 const LAUNCHED = false;
 const supabaseClient = window.supabase.createClient(
   'https://xawrfuqdafipquveemxe.supabase.co',
-  'sb_publishable_keBoqm-l5w_fz93u1vXBVw_cKIIzZT0' // anon/public key from Supabase dashboard → Settings → API
+  'sb_publishable_keBoqm-l5w_fz93u1vXBVw_cKIIzZT0' // anon/public key from Supabase dashboard then Settings then API
 );
 const STORE_URLS = {
   googlePlay: '',
@@ -131,7 +131,7 @@ function initEmailForms() {
 
       if (error && error.code !== '23505') {
         console.error('Email capture failed:', error);
-        alert("Something went wrong — please try again.");
+        alert("Something went wrong. Please try again.");
         return;
       }
 

@@ -65,3 +65,14 @@ Option 1: replace that phrase with "Ready to play?" across the website,
 validate, commit and deploy. Marcus approved: "approve, put coming soon for apple".
 All Apple store labels now read "Coming soon" above "App Store". Existing
 pre-launch disabled state is retained. This does not announce an iOS launch date.
+
+## Website language correction, 2026-10-03
+
+Option 1: review the game bible and related docs, remove Game over wording,
+replace em dashes with normal punctuation, spell out arrow directions, validate,
+commit and deploy. Marcus's exact approval: "approve".
+Sources reviewed: game_design_bible.md Core Design Pillars (non-punitive learning)
+and current failure presentation (Keep Going), production_bible.md and
+game-rules.md. Website copy should be friendly and describe learning and practice.
+No em dashes or arrow glyphs in website text. Directions are written in words.
+Supplied logo artwork remains unchanged. Basic rules only; no mechanic spoilers.
