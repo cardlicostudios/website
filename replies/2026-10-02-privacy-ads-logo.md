@@ -32,3 +32,7 @@ Remaining: public endpoint/deployment verification is reported in the task chat.
 AdMob crawling/verification, consent-message publication and Play Data Safety
 remain separate account tasks. Website publication alone does not complete those.
 No game code, app version, native icon, Android sync, APK or AAB changed.
+
+Publication commit: 8f7ddbafcbb97b39837f1231103365851b9505f2. The final staged
+check additionally found trailing whitespace in the supplied SVG comments; a
+follow-up removes only that whitespace. The artwork is unchanged.

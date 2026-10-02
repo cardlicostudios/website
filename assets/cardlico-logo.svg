@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
   <!-- Cardlico Official Production Master SVG (Pattern 1) -->
-  <!-- 
+  <!--
     CRITICAL GOOGLE PLAY SPECIFICATION:
     Full 1024x1024 square background bleed (No rounded corners or pre-baked drop shadows).
     Google Play Console dynamically masks this file to its standard 30% squircle (squircle mask: r=154 at 512, r=307 at 1024).
     All artwork is composed strictly inside the 80% safe zone (center diameter 888px).
   -->
-  
+
   <!-- Background: Cardlico Signature In-Game Turquoise (#52D5CB) full bleed square -->
   <rect width="1024" height="1024" fill="#52D5CB"/>
 
@@ -15,7 +15,7 @@
     <!-- Outer Track Border: Solid Antique Gold (#F4C542), 20px stroke -->
     <!-- Outer Track Fill: Soft Turquoise (#A9EBE5) -->
     <circle cx="0" cy="0" r="444" fill="#A9EBE5" stroke="#F4C542" stroke-width="20"/>
-    
+
     <!-- 4 Cardinal Directional Swipe Arrows in Deep Indigo (#173A72) -->
     <!-- Up Arrow (0°) -->
     <g transform="translate(0, -384)">
@@ -95,7 +95,7 @@
 
         <!-- Inner Ivory Octagram Ring -->
         <circle cx="0" cy="0" r="38" fill="#FFF8E8" stroke="#173A72" stroke-width="6"/>
-        
+
         <!-- Central Jewel Core in Deep Turquoise (#27B8B0) & Gold (#F4C542) -->
         <circle cx="0" cy="0" r="22" fill="#27B8B0"/>
         <circle cx="0" cy="0" r="8" fill="#F4C542"/>
