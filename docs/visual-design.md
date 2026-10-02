@@ -57,3 +57,11 @@ Marcus requested the website use cardlico_app_icon_master.svg and its supplied
 website. Copies live in assets/cardlico-logo.svg, cardlico-icon-512.png and
 cardlico-icon-1024.png. The SVG appears in navigation, footer and home hero;
 the 512px PNG supplies browser and touch icons. Original game assets unchanged.
+
+## Friendly CTA and Apple availability — 2026-10-03
+
+Problem: Marcus said Cardlico is friendly and disliked "Ready to lose?".
+Option 1: replace that phrase with "Ready to play?" across the website,
+validate, commit and deploy. Marcus approved: "approve, put coming soon for apple".
+All Apple store labels now read "Coming soon" above "App Store". Existing
+pre-launch disabled state is retained. This does not announce an iOS launch date.
