@@ -49,3 +49,11 @@ Option 2: use hello@cardlico.com with the same minimal rules.
 Marcus chose: "use support email. yeah just the main rules on the website, the rest should be learnt from playing the game".
 Public gameplay copy must explain the four suit directions and swiping before
 time runs out, without special-card details, scoring formulas or progression spoilers.
+
+## Supplied production logo — 2026-10-02
+
+Marcus requested the website use cardlico_app_icon_master.svg and its supplied
+512px/1024px PNG exports. These supersede the temporary HTML/CSS mark on the
+website. Copies live in assets/cardlico-logo.svg, cardlico-icon-512.png and
+cardlico-icon-1024.png. The SVG appears in navigation, footer and home hero;
+the 512px PNG supplies browser and touch icons. Original game assets unchanged.

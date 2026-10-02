@@ -709,3 +709,8 @@ footer { background: var(--brand-ivory); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Supplied Cardlico logo, shared by every website page. */
+.brand-icon { width: 44px; height: 44px; flex: 0 0 44px; border-radius: 10px; object-fit: contain; }
+.hero-brand .brand-icon { width: 76px; height: 76px; flex-basis: 76px; border-radius: 17px; }
+.content-block p a { text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }

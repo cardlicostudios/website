@@ -78,8 +78,7 @@ rather than hardcoded links.
 
 The website follows the current game shell: turquoise backgrounds, ivory
 reading surfaces, indigo structure, rose actions and rounded system headings.
-Shared tokens and responsive styles live in `styles.css`. The temporary
-three-card mark uses HTML/CSS, with no external fonts or new artwork.
+Shared tokens and responsive styles live in `styles.css`. The supplied Cardlico logo is stored in `assets/` and used across all pages.
 See [the visual design record](docs/visual-design.md) for sources and scope.
 
 ## Notes
@@ -88,7 +87,6 @@ See [the visual design record](docs/visual-design.md) for sources and scope.
   repository only contains the marketing site.
 - Leaderboard data on `leaderboard.html` is placeholder until the app ships
   and a real backend (Supabase) is wired in.
-- The email capture form in the Coming Soon state currently just clears the
-  input and shows a success message — connect it to a real endpoint
-  (e.g. a Supabase table or a form service) before relying on it to collect
-  real signups.
+- Launch signup emails are stored in Supabase by `nav.js`.
+- Privacy disclosures and the AdMob publisher record are documented in
+  [privacy and advertising](docs/privacy-and-advertising.md).
