@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cardlico.com/sitemap.xml

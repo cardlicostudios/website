@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#52d5cb"/><rect x="40" y="40" width="1120" height="550" rx="36" fill="#fff8e8" stroke="#173a72" stroke-width="3"/><g fill="#173a72" font-family="Arial, sans-serif"><text x="90" y="165" font-size="34" font-weight="700">CARDLICO</text><text x="90" y="275" font-size="70" font-weight="700">One glance.</text><text x="90" y="355" font-size="70" font-weight="700">One swipe.</text><text x="90" y="435" font-size="26">Learn, swipe and find your rhythm.</text><text x="90" y="530" font-size="24">cardlico.com</text></g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" x="730" y="115" width="400" height="400">
+  <!-- Cardlico Official Production Master SVG (Pattern 1) -->
+  <!--
+    CRITICAL GOOGLE PLAY SPECIFICATION:
+    Full 1024x1024 square background bleed (No rounded corners or pre-baked drop shadows).
+    Google Play Console dynamically masks this file to its standard 30% squircle (squircle mask: r=154 at 512, r=307 at 1024).
+    All artwork is composed strictly inside the 80% safe zone (center diameter 888px).
+  -->
+
+  <!-- Background: Cardlico Signature In-Game Turquoise (#52D5CB) full bleed square -->
+  <rect width="1024" height="1024" fill="#52D5CB"/>
+
+  <!-- Master Center Dial Assembly -->
+  <g transform="translate(512, 512)">
+    <!-- Outer Track Border: Solid Antique Gold (#F4C542), 20px stroke -->
+    <!-- Outer Track Fill: Soft Turquoise (#A9EBE5) -->
+    <circle cx="0" cy="0" r="444" fill="#A9EBE5" stroke="#F4C542" stroke-width="20"/>
+
+    <!-- 4 Cardinal Directional Swipe Arrows in Deep Indigo (#173A72) -->
+    <!-- Up Arrow (0°) -->
+    <g transform="translate(0, -384)">
+      <polygon points="0,-42 32,8 -32,8" fill="#173A72"/>
+      <rect x="-10" y="6" width="20" height="34" rx="4" fill="#173A72"/>
+    </g>
+    <!-- Down Arrow (180°) -->
+    <g transform="translate(0, 384)">
+      <polygon points="0,42 32,-8 -32,-8" fill="#173A72"/>
+      <rect x="-10" y="-40" width="20" height="34" rx="4" fill="#173A72"/>
+    </g>
+    <!-- Left Arrow (270°) -->
+    <g transform="translate(-384, 0)">
+      <polygon points="-42,0 8,-32 8,32" fill="#173A72"/>
+      <rect x="6" y="-10" width="34" height="20" rx="4" fill="#173A72"/>
+    </g>
+    <!-- Right Arrow (90°) -->
+    <g transform="translate(384, 0)">
+      <polygon points="42,0 -8,-32 -8,32" fill="#173A72"/>
+      <rect x="-40" y="-10" width="34" height="20" rx="4" fill="#173A72"/>
+    </g>
+
+    <!-- 4 Diagonal Dial Studs at 45°, 135°, 225°, 315° in Solid Gold (#F4C542) with Deep Indigo rims -->
+    <g transform="rotate(45) translate(0, -384)"><circle cx="0" cy="0" r="14" fill="#F4C542" stroke="#173A72" stroke-width="6"/></g>
+    <g transform="rotate(135) translate(0, -384)"><circle cx="0" cy="0" r="14" fill="#F4C542" stroke="#173A72" stroke-width="6"/></g>
+    <g transform="rotate(225) translate(0, -384)"><circle cx="0" cy="0" r="14" fill="#F4C542" stroke="#173A72" stroke-width="6"/></g>
+    <g transform="rotate(315) translate(0, -384)"><circle cx="0" cy="0" r="14" fill="#F4C542" stroke="#173A72" stroke-width="6"/></g>
+
+    <!-- Inner Circle Border: Deep Turquoise (#27B8B0), 22px stroke -->
+    <!-- Inner Dial Plate: Warm Ivory (#FFF8E8) -->
+    <circle cx="0" cy="0" r="324" fill="#FFF8E8" stroke="#27B8B0" stroke-width="22"/>
+    <!-- Inset hairline keyline in Gold (#F4C542) -->
+    <circle cx="0" cy="0" r="300" fill="none" stroke="#F4C542" stroke-width="6"/>
+
+    <!-- 4 Card Suits orbiting on the Ivory Dial -->
+    <!-- 1. Spades: PURE BLACK (#000000) -->
+    <g transform="translate(0, -215) scale(1.22)">
+      <path d="M 0,-24 C -16, -4 -22, 10 0, 20 C 22, 10 16, -4 0, -24 Z" fill="#000000"/>
+      <polygon points="0,14 -7,28 7,28" fill="#000000"/>
+    </g>
+    <!-- 2. Hearts: Rose Red (#C82F6F) -->
+    <g transform="translate(0, 215) scale(1.22)">
+      <path d="M 0,22 C -24, 0 -26, -18 -12, -24 C 0, -28 0, -12 0, -12 C 0, -12 0, -28 12, -24 C 26, -18 24, 0 0, 22 Z" fill="#C82F6F"/>
+    </g>
+    <!-- 3. Diamonds: Rose Red (#C82F6F) -->
+    <g transform="translate(-215, 0) scale(1.22)">
+      <polygon points="0,-24 16,0 0,24 -16,0" fill="#C82F6F"/>
+    </g>
+    <!-- 4. Clubs: PURE BLACK (#000000) -->
+    <g transform="translate(215, 0) scale(1.22)">
+      <circle cx="0" cy="-10" r="10" fill="#000000"/>
+      <circle cx="-10" cy="4" r="10" fill="#000000"/>
+      <circle cx="10" cy="4" r="10" fill="#000000"/>
+      <polygon points="0,6 -6,22 6,22" fill="#000000"/>
+    </g>
+
+    <!-- 3 Fanned Cards in Center (Scaled and centered for maximum small-screen legibility) -->
+    <g transform="translate(0, 4) scale(0.60)">
+      <!-- Left Card: Deep Teal (#27B8B0) tilted -14° -->
+      <g transform="rotate(-14)">
+        <rect x="-240" y="-170" width="220" height="340" rx="36" fill="#27B8B0" stroke="#173A72" stroke-width="22" stroke-linejoin="round"/>
+      </g>
+      <!-- Right Card: Soft Pink (#FFE4ED) tilted +14° -->
+      <g transform="rotate(14)">
+        <rect x="20" y="-170" width="220" height="340" rx="36" fill="#FFE4ED" stroke="#173A72" stroke-width="22" stroke-linejoin="round"/>
+      </g>
+      <!-- Center Hero Card: Warm Ivory (#FFF8E8) with Deep Indigo border (#173A72) -->
+      <g>
+        <rect x="-115" y="-180" width="230" height="360" rx="40" fill="#FFF8E8" stroke="#173A72" stroke-width="24" stroke-linejoin="round"/>
+        <!-- Inset fine hairline in Deep Teal (#27B8B0) -->
+        <rect x="-95" y="-160" width="190" height="320" rx="26" fill="none" stroke="#27B8B0" stroke-width="6"/>
+
+        <!-- Islamic 8-Point Geometric Star (Rub el Hizb / Khatim ۞) in Solid Gold (#F4C542) -->
+        <!-- Intersecting 45° Squares -->
+        <rect x="-62" y="-62" width="124" height="124" rx="8" fill="#F4C542" stroke="#173A72" stroke-width="8"/>
+        <rect x="-62" y="-62" width="124" height="124" rx="8" fill="#F4C542" stroke="#173A72" stroke-width="8" transform="rotate(45)"/>
+
+        <!-- Inner Ivory Octagram Ring -->
+        <circle cx="0" cy="0" r="38" fill="#FFF8E8" stroke="#173A72" stroke-width="6"/>
+
+        <!-- Central Jewel Core in Deep Turquoise (#27B8B0) & Gold (#F4C542) -->
+        <circle cx="0" cy="0" r="22" fill="#27B8B0"/>
+        <circle cx="0" cy="0" r="8" fill="#F4C542"/>
+      </g>
+    </g>
+  </g>
+</svg>
+</svg>
