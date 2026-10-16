@@ -800,7 +800,7 @@ section.ranking-results { padding: 24px 0 0; }
 #ranking-table th { font-size: 12px; }
 @media (max-width: 600px) { .rankings-categories button { padding: 13px 5px; } .ranking-category-name { font-size: 13px; } #ranking-table td { font-size: 12px; padding: 10px 4px; } #ranking-table th { padding: 10px 4px; font-size: 10px; } }
 
-/* Waitlist is the primary homepage action. */
+/* Google Play is the primary download CTA; waitlist covers App Store. */
 #download-cta .store-row { margin-top: 24px; }
 #download-cta .store-btn { box-shadow: none; background: transparent; }
 .home-boards { text-align: center; }
