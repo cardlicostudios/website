@@ -804,4 +804,6 @@ section.ranking-results { padding: 24px 0 0; }
 #download-cta .store-row { margin-top: 24px; }
 #download-cta .store-btn { box-shadow: none; background: transparent; }
 .home-boards { text-align: center; }
+#support { padding: 56px 0; }
+#support .support-note { margin-top: 14px; color: var(--t2); font-size: 14px; }
 .mode-icon svg { display: block; margin: 0 auto; color: var(--pri); }

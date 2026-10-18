@@ -14,6 +14,17 @@ test('homepage has one store group, five boards and distinct rule heading',()=>{
  assert(html.includes('https://www.instagram.com/cardlico/'));
  assert(html.includes('https://www.tiktok.com/@cardlico'));
  assert(html.includes('https://www.youtube.com/@cardlico'));
+ assert(html.includes('name="pinterest-site-verification"'));
+ assert(html.includes('content="572517eeb0921f7d2417fd5607b77c19"'));
+ assert(html.includes('id="support"'));
+ assert(html.includes('Support Cardlico your way'));
+ assert(html.includes('Upgrade to Premium'));
+ assert(html.includes('first three Campaign levels'));
+ assert(html.indexOf('home-boards') < html.indexOf('id="support"'));
+ assert(html.indexOf('id="support"') < html.indexOf('id="download-cta"'));
+ const heroEnd = html.indexOf('</header>');
+ assert(heroEnd > 0);
+ assert(html.indexOf('Support Cardlico your way') > heroEnd);
 });
 
 test('Play Store is released and App Store stays coming soon',()=>{
